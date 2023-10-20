@@ -51,7 +51,7 @@
 @media (min-width: 1281px) {
   .introImage {
     position: relative;
-    bottom: 115px;
+    bottom: 80px;
     width: 100%;
     object-fit: contain;
   }
@@ -66,10 +66,17 @@
 @media (min-width: 1025px) and (max-width: 1280px) {
   .introImage {
     position: relative;
-    bottom: 110px;
+    bottom: 80px;
     width: 100%;
 
     object-fit: contain;
+  }
+
+  /* CSS */
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .card {
+    width: 100%;
   }
 
   /* CSS */

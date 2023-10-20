@@ -1,0 +1,72 @@
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe957;
+}
+.login > form {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  border-radius: 10px;
+  width: 350px;
+}
+.login > form > div {
+  border: 1px solid #c4c4c4;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+.login > form > div > p {
+  margin-bottom: 8px;
+}
+.login > form > div > input {
+  width: 100%;
+
+  color: #6c63ff;
+}
+.login > form > div > input:focus {
+  border: none;
+  outline: none;
+}
+.login > form > div:focus-within {
+  border-right: 4px solid #6c63ff;
+}
+.login > form > section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.login > form > section > button {
+  width: 48%;
+
+  padding-top: 3px;
+  margin-top: 10px;
+}
+.signup {
+  border: 1.5px solid #6c63ff;
+  color: #6c63ff;
+}
+.loginButton {
+  background-color: #6c63ff;
+  color: #ffffff;
+}
+.login > form > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #dd4b39;
+  color: white;
+  padding: 5px 0;
+  margin-top: 10px;
+  border-radius: 5px;
+  gap: 5px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .login > form {
+    width: 95vw;
+  }
+}

@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./styles.module.css";
 import Image from "next/image";
 import logo from "../assets/logo.svg";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Nav = () => {
   return (
     <nav
-      class="navbar navbar-expand-lg "
+      class="navbar navbar-expand-lg sticky-top  "
       style={{
         boxShadow: "none",
       }}
@@ -36,7 +37,8 @@ const Nav = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i className="fas fa-bars"></i>
+          <GiHamburgerMenu color="#6c63ff" />
+          {/* <i className="fas fa-bars"></i> */}
         </button>
 
         <div className="collapse navbar-collapse" id="navbarButtonsExample">

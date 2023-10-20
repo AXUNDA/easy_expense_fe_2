@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 const Intro = () => {
   return (
-    <div class="row mt-5 intro">
+    <div class="row mt-5 intro me-0 ms-0">
       <div className="col-md-6 col-lg-6 col-sm-12">
         <h1>Track and approve.</h1>
         <h1>business expenses easily</h1>
