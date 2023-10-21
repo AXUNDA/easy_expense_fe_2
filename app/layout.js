@@ -3,6 +3,7 @@ import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
+import "react-pro-sidebar/dist/css/styles.css";
 
 export const metadata = {
   title: "Create Next App",

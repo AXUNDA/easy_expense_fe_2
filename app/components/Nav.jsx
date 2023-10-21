@@ -53,7 +53,7 @@ const Nav = () => {
               signup
             </a>
 
-            <a className={styles.login} href="">
+            <a className={styles.login} href="/login">
               Login
             </a>
           </div>

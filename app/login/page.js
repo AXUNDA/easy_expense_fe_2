@@ -12,7 +12,7 @@ const page = () => {
       <form>
         <Image src={logo} />
         <h1>Login</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi</p>
         <div>
           <p>email</p>
           <input type="text" placeholder="test@test.com" />
@@ -23,7 +23,7 @@ const page = () => {
         </div>
         <section className="mt-2">
           <Checkbox colorScheme="yellow" size="sm">
-            remember me
+            Remember Me
           </Checkbox>
           <a
             href=""
@@ -31,7 +31,7 @@ const page = () => {
               fontSize: "13px",
             }}
           >
-            forgot password?
+            Forgotten Password?
           </a>
         </section>
         <section>
