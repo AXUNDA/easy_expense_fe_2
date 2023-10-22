@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../components/Container";
 import SideBar from "../components/SideBar";
 import styles from "./styles.module.css";
+import Remove from "../components/Remove";
 
 const page = () => {
   return (
@@ -23,7 +24,29 @@ const page = () => {
                 <h3>Organization name</h3>
                 <p>Enle Co</p>
               </div>
-              <div></div>
+              <div className="invite">
+                <h3>Invite members</h3>
+                <div>
+                  <input type="text" placeholder="dave@enle.co" />
+                  <button>invite</button>
+                </div>
+              </div>
+            </div>
+            <section className="mt-3 removeSection">
+              <p>Remove members</p>
+              <div className="_remove">
+                <p>
+                  david@enle.co <Remove />{" "}
+                </p>
+              </div>
+            </section>
+            <div className="mt-3">
+              <button className="deleteButton">Delete organization</button>
+              <section className="changes">
+                <button className="cancelButton">cancel</button>
+
+                <button className="saveButton">save changes</button>
+              </section>
             </div>
           </div>
           <div className="mt-4">

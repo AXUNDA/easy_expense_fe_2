@@ -37,7 +37,7 @@ const Nav = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <GiHamburgerMenu color="#6c63ff" />
+          <GiHamburgerMenu size={38} color="#6c63ff" />
           {/* <i className="fas fa-bars"></i> */}
         </button>
 
