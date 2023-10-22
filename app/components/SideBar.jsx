@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../assets/logo.svg";
 
-//import react pro sidebar components
 import {
   ProSidebar,
   Menu,
@@ -14,8 +13,6 @@ import {
   SidebarFooter,
   SidebarContent,
 } from "react-pro-sidebar";
-
-//import icons from react icons
 
 import { TfiReceipt } from "react-icons/tfi";
 import {

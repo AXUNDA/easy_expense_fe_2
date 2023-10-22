@@ -1,6 +1,66 @@
 .nav-right {
   gap: 10px;
 }
+.changes {
+  display: flex;
+  gap: 20px;
+}
+.changes > button {
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.cancelButton {
+  border: 1px solid #6f6f70;
+}
+.saveButton {
+  background-color: #6c63ff;
+  color: white;
+}
+.custom {
+  border: 1px solid #c4c4c4;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+.deleteButton {
+  background-color: #ff1414;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+.custom:focus-within {
+  border-right: 4px solid #6c63ff;
+}
+.custom > input {
+  width: 100%;
+  color: #6c63ff;
+}
+.custom > input::placeholder {
+  color: #6c63ff;
+}
+.custom > input:focus {
+  border: none;
+  outline: none;
+}
+.custom > p {
+  margin-bottom: 1px;
+}
+.org {
+  background-color: #f0f0f0;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.org > h3 {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.org > p {
+  color: #6c63ff;
+  margin-bottom: 4px;
+}
 
 nav {
   background: white;
@@ -57,8 +117,8 @@ nav {
 /* side bar */
 
 #header {
-  position: absolute;
-  width: 220px;
+  /* position: absolute; */
+  /* width: 220px; */
 }
 #header .pro-sidebar {
   height: 100vh;
@@ -97,7 +157,7 @@ nav {
   font-weight: bold;
 }
 #header .pro-sidebar-inner .pro-sidebar-layout ul {
-  padding: 0 5px;
+  padding: 0 0;
 }
 #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
   color: #000;
@@ -112,7 +172,7 @@ nav {
   .pro-icon-wrapper {
   background-color: transparent;
   color: #6c63ff;
-  border-radius: 3px;
+  /* border-radius: 3px; */
 }
 #header
   .pro-sidebar-inner
@@ -140,9 +200,11 @@ nav {
   background-color: #ff1414;
   color: white;
   padding: 3px;
-  border-radius: 50%;
-  font-size: 11px;
+  /* border-radius: 50%; */
+  font-size: 13px;
   font-weight: 500;
+  border-radius: 3px;
+  /* border-radius: 50%; */
 }
 
 @media only screen and (max-width: 720px) {
