@@ -27,7 +27,7 @@ const page = () => {
             </div>
           </div>
           <div className="mt-4">
-            <p>Organization Settings</p>
+            <p>Personal Settings</p>
             <div>
               <div className="custom">
                 <p>Full Name</p>
