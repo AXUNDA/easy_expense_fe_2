@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   AlertDialog,
   AlertDialogBody,
@@ -10,12 +10,49 @@ import {
   AlertDialogCloseButton,
   useDisclosure,
   Button,
+  useToast,
 } from "@chakra-ui/react";
 import { AiFillCloseCircle } from "react-icons/ai";
+import api from "./api";
 
-const Remove = () => {
+const Remove = ({ memberId, setMembers }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [loading, setLoading] = useState(false);
   const cancelRef = React.useRef();
+  const toast = useToast();
+
+  const getMembers = async () => {
+    const data = await api.getMembers();
+    console.log(data);
+    setMembers(data.members);
+  };
+
+  const deleteMember = async () => {
+    try {
+      setLoading(true);
+
+      await api.removeMember(memberId);
+
+      onClose();
+      setLoading(false);
+      toast({
+        title: "member deleted",
+        status: "success",
+        position: "top",
+        duration: 5000,
+        isClosable: true,
+      });
+      await getMembers();
+    } catch (error) {
+      toast({
+        title: `${error.response.data.msg}`,
+        status: "error",
+        position: "top",
+        duration: 5000,
+        isClosable: true,
+      });
+    }
+  };
 
   return (
     <>
@@ -63,7 +100,14 @@ const Remove = () => {
             <Button ref={cancelRef} onClick={onClose}>
               No
             </Button>
-            <Button colorScheme="red" ml={3}>
+            <Button
+              colorScheme="red"
+              isLoading={loading}
+              ml={3}
+              onClick={async () => {
+                await deleteMember();
+              }}
+            >
               Yes
             </Button>
           </AlertDialogFooter>

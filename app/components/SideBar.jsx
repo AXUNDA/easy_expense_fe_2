@@ -4,6 +4,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../assets/logo.svg";
+import Cookies from "js-cookie";
 
 import {
   ProSidebar,
@@ -31,6 +32,10 @@ const SideBar = () => {
 
   const menuIconClick = () => {
     menuCollapse ? setMenuCollapse(false) : setMenuCollapse(true);
+  };
+  const logout = () => {
+    Cookies.set("auth_token", "");
+    window.location.href = "/login";
   };
 
   return (
@@ -60,7 +65,9 @@ const SideBar = () => {
           </SidebarContent>
           <SidebarFooter>
             <Menu iconShape="square">
-              <MenuItem icon={<FiLogOut />}>Logout</MenuItem>
+              <MenuItem onClick={logout} icon={<FiLogOut />}>
+                Logout
+              </MenuItem>
             </Menu>
           </SidebarFooter>
         </ProSidebar>
