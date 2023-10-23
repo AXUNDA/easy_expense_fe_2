@@ -11,7 +11,7 @@ const token = Cookies.get("auth_token")
 class ApiService {
     constructor() {
         this.client = axios.create({
-            baseURL: "http://localhost:8080",
+            baseURL: "https://easy-expense.onrender.com",
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": `Bearer ${token}`
