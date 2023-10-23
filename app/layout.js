@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
+import Shield from "./components/Shield";
 
 const inter = Inter({ subsets: ["latin"] });
 import "react-pro-sidebar/dist/css/styles.css";
