@@ -35,7 +35,7 @@ const page = () => {
       });
       setLoading(false);
       setSuccess(true);
-      window.open("/dashboard");
+      window.open("/dashboard", "_self");
 
       // window.location.href = "/dashboard";
     } catch (error) {
