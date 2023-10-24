@@ -56,7 +56,13 @@ const Remove = ({ memberId, setMembers }) => {
 
   return (
     <>
-      <AiFillCloseCircle color="red" onClick={onOpen} />
+      <AiFillCloseCircle
+        style={{
+          cursor: "pointer",
+        }}
+        color="red"
+        onClick={onOpen}
+      />
       <AlertDialog
         motionPreset="slideInBottom"
         leastDestructiveRef={cancelRef}
